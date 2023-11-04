@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "matador"
+version = "0.1.0"
+description = "Matador, a data engineering/integration metadata store. Holds information about sources, transforms/mappings and downstreams."
+authors = ["PattyC <patrickcoffey91@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

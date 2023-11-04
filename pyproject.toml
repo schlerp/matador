@@ -5,7 +5,10 @@ description = "Add your description here"
 authors = [
     { name = "PattyC", email = "patrickcoffey91@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "fastapi>=0.104.1",
+    "sqlalchemy>=2.0.23",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 

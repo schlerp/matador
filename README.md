@@ -8,16 +8,20 @@ Ultimately I wanted a tool that was simpler than the full blown metadata managem
 
 ### dataset
 
+A dataset is used to group a collection of attributes together.
+
 * name - pkey
 * type
 * owner - nullable
 
-| type | name           | owner       |
-|------|----------------|-------------|
-| fhir | abc patient    | some system |
-| csv  | medicare items | medicare    |
+| name           | type | owner       |
+|----------------|------|-------------|
+| abc patient    | fhir | some system |
+| medicare items | csv  | medicare    |
 
 ### attribute
+
+An attribute represents a field of a dataset, or a column of a table.
 
 * dataset
 * name
@@ -33,6 +37,8 @@ Ultimately I wanted a tool that was simpler than the full blown metadata managem
 
 ### mapping
 
+A mapping describes a simple transformation from one value to another.
+
 * codeset
 * value_in
 * value out
@@ -46,6 +52,8 @@ Ultimately I wanted a tool that was simpler than the full blown metadata managem
 | status  | disabled | *null*    |
 
 ### attribute encoding
+
+An attribute encoding descibes how a dataset will be serialised, these are expressed at the attribute level.
 
 * dataset
 * attribute

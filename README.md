@@ -63,5 +63,5 @@ An attribute encoding descibes how a dataset will be serialised, these are expre
 | dataset     | attribute  | path                    | mapping  |
 |-------------|------------|-------------------------|----------|
 | abc patient | gender     | $.gender                | gender   |
-| abc patient | last_name  | $.name[0].family        | false    |
-| abc patient | uid        | $.identifiers[0].value  | false    |
+| abc patient | last_name  | $.name[0].family        | *null*   |
+| abc patient | uid        | $.identifiers[0].value  | *null*   |

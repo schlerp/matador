@@ -1,4 +1,6 @@
+from matador.schemas.attribute_encoding import AttributeEncodingOut
 from matador.schemas.base import BaseSchema
+from matador.schemas.dataset import DatasetOut
 from pydantic import BaseModel
 
 
@@ -16,6 +18,6 @@ class AttributeIn(AttributeBase, BaseSchema):
 
 
 class AttributeOut(AttributeBase, BaseSchema):
-    attribute_encoding: list["AttributeEncodingOut"]
+    attribute_encoding: AttributeEncodingOut
     dataset_id: int
-    dataset: "DatasetOut"
+    dataset: DatasetOut

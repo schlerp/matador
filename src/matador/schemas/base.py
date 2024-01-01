@@ -10,5 +10,6 @@ class BaseSchema(BaseModel):
     created_at: datetime.datetime
     updated_at: datetime.datetime
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True,
+    }

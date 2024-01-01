@@ -15,5 +15,4 @@ class DatasetIn(BaseSchema, DatasetBase):
 
 
 class DatasetOut(BaseSchema, DatasetBase):
-    attributes: list["Attributes"]
-    attribute_encodings: list["AttributeEncodings"]
+    pass
